@@ -94,29 +94,25 @@ Pageflow.configure do |config|
   # Default options for paperclip attachments which are supposed to
   # use s3 storage. All options allowed in paperclip has_attached_file
   # calls are allowed.
-  config.paperclip_s3_default_options.merge!(
-    s3_credentials: {
-      bucket: ENV['S3_BUCKET'],
-      access_key_id: ENV['S3_ACCESS_KEY'],
-      secret_access_key: ENV['S3_SECRET_KEY'],
-      s3_host_name: ENV['S3_HOST_NAME']
+?config.paperclip_s3_default_options.merge!(
+    :s3_credentials => {
+      :bucket => ENV.fetch('S3_BUCKET', 'com-example-pageflow-development'),
+      :access_key_id => ENV.fetch('S3_ACCESS_KEY', 'xxx'),
+      :secret_access_key => ENV.fetch('S3_SECRET_KEY', 'xxx'),
+      :s3_host_name => ENV.fetch('S3_HOST_NAME', 's3-eu-west-1.amazonaws.com')
     },
-    s3_host_alias: ENV['S3_HOST_ALIAS'],
-    s3_protocol: ENV['S3_PROTOCOL'],
-    s3_headers: {
-      'Expires' => "Wed, 17 Jul 2047 16:58:03 GMT", # keep until we're on Pageflow 12.0.0
-      'Cache-Control' => "public, max-age=31536000"
-    }
+    :s3_host_alias => ENV.fetch('S3_HOST_ALIAS', 'com-example-pageflow.s3-website-eu-west-1.amazonaws.com'),
+    :s3_protocol => ENV.fetch('S3_PROTOCOL', 'http')
   )
 
   # Default options for paperclip attachments which are supposed to
   # use filesystem storage. All options allowed in paperclip has_attached_file
   # calls are allowed.
   config.zencoder_options.merge!(
-    :api_key => ENV['ZENCODER_API_KEY'],
-    :output_bucket => ENV['S3_OUTPUT_BUCKET'],
-    :s3_host_alias => ENV['S3_OUTPUT_HOST_ALIAS'],
-    :s3_protocol => ENV['S3_PROTOCOL'],
+    :api_key => ENV.fetch('ZENCODER_API_KEY', 'xxx'),
+    :output_bucket => ENV.fetch('S3_OUTPUT_BUCKET', 'com-example-pageflow-out'),
+    :s3_host_alias => ENV.fetch('S3_OUTPUT_HOST_ALIAS', 'com-example-pageflow-out.s3-website-eu-west-1.amazonaws.com'),
+    :s3_protocol => ENV.fetch('S3_PROTOCOL','http'),
     :attachments_version => 'v1'
   )
 end
@@ -126,3 +122,4 @@ end
 # state. Otherwise Pageflow configuration errors might prevent you
 # from initializing the environment. Required for Pageflow to run.
 Pageflow.finalize!
+
