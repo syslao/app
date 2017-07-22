@@ -94,7 +94,7 @@ Pageflow.configure do |config|
   # Default options for paperclip attachments which are supposed to
   # use s3 storage. All options allowed in paperclip has_attached_file
   # calls are allowed.
-?config.paperclip_s3_default_options.merge!(
+config.paperclip_s3_default_options.merge!(
     :s3_credentials => {
       :bucket => ENV.fetch('S3_BUCKET', 'com-example-pageflow-development'),
       :access_key_id => ENV.fetch('S3_ACCESS_KEY', 'xxx'),
