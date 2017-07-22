@@ -1,0 +1,151 @@
+/* line 1, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.vjs-control-bar {
+  /* Make sure control bar is centered, since translateX(-50%) does not work. */
+  margin-left: -217px !important;
+}
+/* line 5, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.vjs-control-bar:before {
+  display: none !important;
+}
+
+/* line 10, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.vjs-tech {
+  /* Centering Video with translateY(-50%) does not work. */
+  top: auto !important;
+}
+
+/* line 15, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.navigation .navigation_site_detail:before {
+  /* IE 8 fails to render the small arrows on the navigation detail
+     boxes correctly. Hide. */
+  display: none !important;
+}
+
+/* line 21, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.entry .scroll_indicator:before {
+  /* background-image: image-url('pageflow/down_small.png'); */
+}
+
+/* line 25, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.entry .scroll_indicator.invert:before {
+  /* background-image: image-url('pageflow/down_small_invert.png'); */
+}
+
+/* line 29, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.page .scroller > div {
+  /* IE 8 does not trigger mouse events on div without a background - duh */
+  background-image: url(".");
+}
+
+/* line 34, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.entry .scroll_indicator {
+  /* IE 8 does not know opacity */
+  display: none;
+  text-indent: -9999px;
+}
+/* line 39, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.entry .scroll_indicator.visible {
+  display: block;
+}
+
+/* line 44, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.js .header {
+  visibility: visible !important;
+  display: none;
+}
+/* line 48, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.js .header.active {
+  display: block;
+}
+
+/* line 54, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.slideshow section.page.animate-out-forwards, .slideshow section.page.animate-out-backwards {
+  display: none;
+}
+/* line 59, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.slideshow section.page.animate-in-forwards, .slideshow section.page.animate-in-backwards {
+  display: block;
+}
+
+/* line 66, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.videoPage .fade-in {
+  visibility: visible !important;
+}
+/* line 70, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.videoPage .fade-out {
+  visibility: hidden !important;
+}
+
+/* line 75, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.js .page .videoPage .add_info_box, .js .audioPage .add_info_box {
+  margin: 0 0 63px -214px;
+  max-width: 434px;
+}
+
+/* line 80, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.navigation {
+  /* IE 8 displays images in front of pseudo elements of parent */
+}
+/* line 82, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.navigation .navigation_thumbnails a {
+  z-index: 1;
+}
+/* line 85, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.navigation .navigation_thumbnails a:focus:after {
+  z-index: 2;
+}
+/* line 89, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.navigation .navigation_thumbnails a img {
+  position: relative;
+  z-index: -1;
+}
+
+/* line 96, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.ie8_hint {
+  font-family: sourcesanspro;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  right: 25%;
+  z-index: 1000;
+  line-height: 25px;
+  padding: 10px 50px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #444;
+}
+/* line 110, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.ie8_hint a {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  margin-left: 21px;
+  margin-right: 6px;
+}
+/* line 118, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.ie8_hint a:before {
+  left: -16px;
+  top: 5px;
+  position: absolute;
+  background-image: url(/images/pageflow/anchor_black.png);
+  width: 10px;
+  height: 12px;
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 131, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.ie8_hint a:hover {
+  text-decoration: underline;
+}
+
+/* line 139, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.internal_links_page .thumbnail:after, .internal_links_page .thumbnail span, .internal_links_page .placeholder:after, .internal_links_page .placeholder span {
+  visibility: hidden;
+}
+
+/* line 147, /home/modems/.rvm/gems/ruby-2.3.4/bundler/gems/pageflow-4a40db29ff73/app/assets/stylesheets/pageflow/lt_ie9.scss */
+.hideText .slideshow .content .contentWrapper, .hidden_text_indicator {
+  display: none;
+}

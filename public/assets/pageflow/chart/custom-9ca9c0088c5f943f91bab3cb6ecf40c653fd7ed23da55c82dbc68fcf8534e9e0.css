@@ -1,0 +1,262 @@
+/*
+ * Noir Theme Customized
+ * ----------
+ *
+ * based on http://bootswatch.com/slate/
+ */
+/* line 9, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+body.chart {
+  font-size: 13px;
+  overflow: visible;
+  overflow-x: hidden;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 18px;
+  padding: 0 10px;
+  font-weight: 400;
+  background: #191919;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+/* line 22, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 27, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+div, span {
+  border-bottom-color: gray !important;
+  border-right-color: gray !important;
+  border-left-color: gray !important;
+  border-top-color: gray !important;
+}
+
+/* line 34, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 39, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 15px;
+  text-align: left;
+  line-height: initial;
+}
+
+/* line 47, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.chart p {
+  margin: 15px 0;
+  line-height: 19px;
+}
+
+/* line 49, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+#chart {
+  margin-top: 25px;
+}
+
+/* line 53, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label span {
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+}
+
+/* line 59, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.line-chart .label span {
+  background: #272B30 !important;
+}
+
+/* line 63, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+html .line-chart .label.tooltip span {
+  background: none !important;
+}
+
+/* line 67, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+html .line-chart .label.tooltip.inverted span {
+  color: #fff !important;
+}
+
+/* line 71, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.highlighted, .label.axis {
+  font-size: 12px;
+  z-index: 100;
+}
+
+/* line 76, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.hover {
+  font-weight: bold;
+}
+
+/* line 80, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.pie-chart .label.hover span,
+.donut-chart .label.hover span {
+  color: #fff;
+}
+
+/* line 85, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.inverted span {
+  color: #000 !important;
+}
+
+/* line 89, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.highlighted {
+  font-weight: bold;
+}
+
+/* line 93, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.value span {
+  font-size: 12px;
+}
+
+/* line 97, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.series span {
+  font-size: 12px;
+}
+
+/* line 102, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.tooltip {
+  z-index: 200;
+  padding-bottom: 0px;
+}
+
+/* line 107, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.tooltip .content {
+  background-color: #202328;
+  border: 1px solid #101214;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5) inset;
+  padding: 5px 8px;
+}
+
+/* line 115, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.tooltip label {
+  font-weight: 700;
+}
+
+/* line 119, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.tooltip label:after {
+  content: ": ";
+}
+
+/* line 123, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+#footer {
+  margin: 0px 0px 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 129, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.footer-left {
+  float: left;
+}
+
+/* line 132, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.footer-right {
+  float: right;
+}
+
+/* line 136, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 145, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 149, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 153, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 157, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+svg .axis, svg .tick, svg .grid, svg rect {
+  shape-rendering: crispEdges;
+}
+
+/* line 161, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.rotate90 {
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* line 169, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.smaller span {
+  font-size: 80%;
+}
+
+/* line 173, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.chart .chartMenu {
+  background: #272B30;
+  box-shadow: 0 0 5px #444;
+}
+
+/* line 178, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.chart .chartMenu a {
+  color: #bbb;
+}
+
+/* line 182, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.chart .chartMenu a:hover {
+  color: #fff;
+}
+
+/* line 187, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.chart .icon-fullscreen {
+  background-position: 0 -15px;
+}
+
+/* line 188, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.chart .icon-share {
+  background-position: -32px -15px;
+}
+
+/* line 189, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.chart .icon-download {
+  background-position: -17px -15px;
+}
+
+/* New rules */
+/* line 194, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+html {
+  height: 100%;
+}
+
+/* line 198, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.filter-select {
+  max-width: 400px;
+}
+@media screen and (max-width: 400px) {
+  /* line 198, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+  .filter-select {
+    max-width: 220px;
+  }
+}
+
+/* line 205, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.filter-ui div span {
+  color: gray;
+}
+
+/* line 208, /home/modems/.rvm/gems/ruby-2.3.4/gems/pageflow-chart-0.2.0/app/assets/stylesheets/pageflow/chart/custom.css.scss */
+.label.outline span {
+  text-shadow: 0 0 2px #000;
+}
