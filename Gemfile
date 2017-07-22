@@ -9,6 +9,7 @@ gem 'rails', '4.2.7.1'
 # database
 gem 'mysql2'
 gem "redis-rails"
+gem 'puma'
 
 # asset pipeline
 gem 'sass-rails'
@@ -41,6 +42,11 @@ gem 'pageflow-oembed'
 group :development do
   gem 'spring'
   gem 'web-console'
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
 end
 
 group :test do
