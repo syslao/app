@@ -5,11 +5,11 @@ ruby '2.3.4'
 
 # rails
 gem 'rails', '4.2.7.1'
+gem 'puma'
 
 # database
 gem 'mysql2'
 gem "redis-rails"
-gem 'puma'
 
 # asset pipeline
 gem 'sass-rails'
@@ -43,7 +43,7 @@ group :development do
   gem 'spring'
   gem 'web-console'
   gem 'capistrano'
-  gem 'capistrano-puma'
+  gem 'capistrano3-puma'
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
