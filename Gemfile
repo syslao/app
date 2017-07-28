@@ -5,7 +5,7 @@ ruby '2.3.4'
 
 # rails
 gem 'rails', '4.2.7.1'
-gem 'puma'
+#gem 'puma'
 
 # database
 gem 'mysql2'
@@ -42,11 +42,11 @@ gem 'pageflow-oembed'
 group :development do
   gem 'spring'
   gem 'web-console'
-  gem 'capistrano'
-  gem 'capistrano3-puma'
-  gem 'capistrano-rails', require: false
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
-  gem 'capistrano-rvm'
+  gem 'capistrano3-puma',   require: false
 end
 
 group :test do
