@@ -5,14 +5,22 @@ Rails.application.routes.draw do
   mount Pageflow::Chart::Engine, at: '/chart'
   mount Pageflow::Oembed::Engine, at: '/oembed'
 
-  constraints HostConstraint.new do
+  #constraints HostConstraint.new do
     devise_for :users, ActiveAdmin::Devise.config
     ActiveAdmin.routes(self)
-  end
+  #end
 
-  authenticated do
+  #authenticated do
     mount Pageflow::ExternalLinks::Engine, at: "/external_links"
-  end
+  #end
 
   Pageflow.routes(self)
 end
+
+#Rails.application.routes.draw do
+#  devise_for :users, ActiveAdmin::Devise.config
+#  ActiveAdmin.routes(self)
+#  Pageflow.routes(self)
+#  mount Pageflow::Chart::Engine, :at => '/chart'
+#  mount Pageflow::ExternalLinks::Engine, :at => '/external_links'
+

@@ -1,0 +1,29 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 10
+
+development:
+  <<: *default
+  database: scrollytelling_development
+
+test: &test
+  <<: *default
+  database: scrollytelling_test
+
+staging:
+  <<: *default
+  database: scrollytelling_staging
+  username: root
+  password: "<%= ENV['MYSQL_PASSWORD']%>"
+  host: "<%= ENV['MYSQL_ADDRESS']%>"
+
+production:
+  <<: *default
+  database: storyboard_production
+  username: root
+  password: "<%= ENV['MYSQL_PASSWORD']%>"
+  host: "<%= ENV['MYSQL_ADDRESS']%>"
+
+cucumber:
+  <<: *test

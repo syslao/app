@@ -5,7 +5,7 @@ Pageflow.configure do |config|
 
   # Activate a constraint for the editor routes defined by Pageflow.
   # This is useful when you have accounts with CNAMEs.
-  config.editor_route_constraint = HostConstraint.new
+  #config.editor_route_constraint = HostConstraint.new
 
   # Page types available in the editor. Add futher page types from
   # page type engines below.
