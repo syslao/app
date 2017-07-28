@@ -5,7 +5,7 @@ ruby '2.3.4'
 
 # rails
 gem 'rails', '4.2.7.1'
-#gem 'puma'
+gem 'puma'
 
 # database
 gem 'mysql2'
