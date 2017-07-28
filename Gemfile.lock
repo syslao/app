@@ -519,7 +519,6 @@ DEPENDENCIES
   pageflow-oembed
   pageflow-text-page
   poltergeist
-  puma
   rack-attack
   rails (= 4.2.7.1)
   redis-rails
